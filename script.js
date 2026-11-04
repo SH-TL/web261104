@@ -3,6 +3,26 @@
 const titles = ["스파이더맨 : 브랜드 뉴 데이", "스파이더맨 : 홈커밍", "스파이더맨 : 노 웨이 홈", "스파이더맨 : 파 프롬 홈", "어벤져스 : 인피니티 워"];
 const ratings = [8.5, 7.3, 7.9, 7.4, 8.2];
 const years = [2026, 2017, 2021, 2019, 2018];
+
+for(let index in titles) {
+    console.log(`영화 ${index}: ${titles[index]}`);
+}
+
+const sumsum = (num1, num2) => num1 + num2;
+
+
+const gugudan = dan => {
+    for(let i = 1; i <= 9; i++) {
+        console.log(`${dan} x ${i} = ${dan*i}`)
+    }
+}
+
+gugudan(sumsum(2, 5));
+
+(function init() {
+    console.log("초기화 실행");
+})();
+
 let sum = 0;
 for (let i = 0; i < ratings.length; i++) {
     sum += ratings[i];
@@ -25,7 +45,7 @@ for (let i = 1; i < ratings.length; i++) {
 }
 // console.log("최고:", titles[maxIndex], max);
 // console.log("8점 이상:", count + "편");
-console.log(`최고: ${titles[maxindex]} ${max}`);
+console.log(`최고: ${titles[maxIndex]} ${max}`);
 console.log(`8점 이상: ${count} 편`)
 
 for (let i = 0; i < 5; i++) {
@@ -44,9 +64,9 @@ for (let i = 0; i < 5; i++) {
 
 const avgText = average.toFixed(1); 
 const best = titles[maxIndex]; 
-alert(`내 영화 ${titles.length}편, 평균 ${avgText}점, 최고는 ${best}`);
+alert(`내 영화 ${titles.length}편, 평균 ${avgText}점, 최고는 ${best}(${ratings[maxIndex]}점)`);
 
-console.log(`alert(내 영화 ${titles.length}편, 평균 ${avgText}점, 최고는 ${best});`)
+//console.log(`alert(내 영화 ${titles.length}편, 평균 ${avgText}점, 최고는 ${best});`)
 
 
 
