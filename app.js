@@ -17,7 +17,7 @@ function best(list) {
     let top = list[0];
     for (const m of list) {
         if (m.rating > top.rating) {
-            top = m.rating;
+            top = m;
         }
     }
     return top;
